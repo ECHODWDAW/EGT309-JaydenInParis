@@ -33,9 +33,9 @@ The original dataset is preserved without modification.
 
 ## Members
 
-* Ethan Kwan Hong Wei *
-* Loo Yan Yi *
-* Seah Wei Jie *
+- Ethan Kwan Hong Wei 
+- Loo Yan Yi 
+- Seah Wei Jie 
 
 ## Project Structure
 
