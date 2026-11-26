@@ -1,0 +1,36 @@
+# Dataset configuration
+data:
+  path: "data/proj_machine_readings.csv"
+  target: "maintenance_required"
+  timestamp: "timestamp"
+  machine_id: "machine_id"
+
+# Dataset splitting
+split:
+  test_size: 0.2
+  random_state: 42
+  method: "chronological"
+
+# Data cleaning configuration
+cleaning:
+  remove_duplicates: true
+  correct_vibration: true
+  vibration_sign_verified: true
+  vibration_error_minutes: [0, 15, 30, 45]
+  temperature_imputation: "median"
+
+# Feature configuration
+features:
+  sensor_columns:
+    - temperature
+    - vibration
+    - humidity
+    - pressure
+    - energy_consumption
+
+  exclude_columns:
+    - machine_status
+    - anomaly_flag
+    - predicted_remaining_life
+    - failure_type
+    - downtime_risk
